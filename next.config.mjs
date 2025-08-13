@@ -13,8 +13,7 @@ const nextConfig = {
     compiler: "modern",
     silenceDeprecations: ["legacy-js-api"],
   },
+  
 };
-
-
 
 export default withMDX(nextConfig);
