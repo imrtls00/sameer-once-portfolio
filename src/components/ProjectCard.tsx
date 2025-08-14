@@ -10,6 +10,8 @@ import {
   Text,
 } from "@/once-ui/components";
 
+import Link from "next/link";
+
 interface ProjectCardProps {
   href: string;
   priority?: boolean;
@@ -32,13 +34,16 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   return (
     <Column fillWidth gap="m">
-      <Carousel
-        sizes="(max-width: 960px) 100vw, 960px"
-        images={images.map((image) => ({
-          src: image,
+      <Link href={href} style={{ cursor: "pointer", textDecoration: "none" }}>
+        <Carousel
+          sizes="(max-width: 960px) 100vw, 960px"
+          images={images.map((image) => ({
+            src: image,
           alt: title,
         }))}
       />
+      </Link>
+
       <Flex
         mobileDirection="column"
         fillWidth
