@@ -39,14 +39,9 @@ const social = [
     link: "https://www.linkedin.com/in/imrtls00",
   },
   {
-    name: "X",
-    icon: "x",
-    link: "",
-  },
-  {
     name: "Email",
     icon: "email",
-    link: `mailto:${person.email}`,
+    link: `mailto:${person.email}?subject=Project%20Inquiry&body=Hi%20Sameer,%0D%0A%0D%0AI'm:%20[Your%20Name]%0D%0AI’m%20looking%20for:%20[Brief%20Project%20Description]%0D%0ABudget%20Range:%20[Your%20Budget]%0D%0A%0D%0ALooking%20forward%20to%20your%20reply.`,
   },
 ];
 
