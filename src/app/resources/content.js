@@ -10,6 +10,7 @@ const person = {
   avatar: "/images/avatar.png",
   email: "imrtls00@gmail.com",
   location: "Asia/Karachi", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  displayLocation: "Lahore, PK.", // Display location for the user.
   languages: ["English", "Urdu"], // optional: Leave the array empty if you don't want to display languages
 };
 
@@ -88,9 +89,12 @@ const about = {
   avatar: {
     display: true,
   },
-  calendar: {
+  calendar: { // calendar = resume.
     display: true,
-    link: `mailto:${person.email}`,
+    displayIcon: true,
+    link: "/docs/Sameer-F-Resume.pdf",
+    title: "Download Resume",
+    file: "Sameer F's Design Resume.pdf",
   },
   intro: {
     display: true,

@@ -116,7 +116,7 @@ export default function About() {
             marginBottom="32"
           >
             {about.calendar.display && (
-              <Link href={about.calendar.link}>
+              <Link href={about.calendar.link} download={about.calendar.file}>
                 <Flex
                   fitWidth
                   border="brand-alpha-medium"
@@ -131,9 +131,9 @@ export default function About() {
                   marginBottom="m"
                   vertical="center"
                 >
-                  <Icon paddingLeft="12" name="calendar" onBackground="brand-weak" />
-                  <Flex paddingX="8">Schedule a call</Flex>
-                  <IconButton data-border="rounded" variant="secondary" icon="chevronRight" />
+                  { about.calendar.displayIcon && <Icon paddingLeft="8" name="document" onBackground="brand-weak" />}
+                  <Flex paddingRight="8">{about.calendar.title}</Flex>
+                  <IconButton data-border="rounded" variant="secondary" icon="download" />
                 </Flex>
               </Link>
             )}

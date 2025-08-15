@@ -21,11 +21,13 @@ import {
   HiCalendarDays,
   HiClipboard,
   HiArrowRight,
+  HiArrowDownTray,
   HiOutlineEye,
   HiOutlineEyeSlash,
   HiMoon,
   HiSun,
-  HiOutlineDocument,
+  HiDocumentText,
+  HiMapPin,
 } from "react-icons/hi2";
 
 import {
@@ -47,6 +49,7 @@ export const iconLibrary: Record<string, IconType> = {
   arrowUpRight: HiArrowUpRight,
   check: HiCheck,
   arrowRight: HiArrowRight,
+  download: HiArrowDownTray,
   helpCircle: HiMiniQuestionMarkCircle,
   infoCircle: HiInformationCircle,
   warningTriangle: HiExclamationTriangle,
@@ -73,7 +76,8 @@ export const iconLibrary: Record<string, IconType> = {
   arrowUpRightFromSquare: HiArrowTopRightOnSquare,
   moon: HiMoon,
   sun: HiSun,
-  document: HiOutlineDocument,
+  document: HiDocumentText,
+  location: HiMapPin,
 };
 
 export type IconLibrary = typeof iconLibrary;

@@ -38,7 +38,7 @@ const font = {
 };
 
 const style = {
-  theme: "light", // theme is not necessary when using ThemeProvider (default)
+  theme: "system", // theme is not necessary when using ThemeProvider (default)
   neutral: "sand", // sand | gray | slate
   brand: "cyan", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
   accent: "green", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
@@ -93,6 +93,7 @@ const effects = {
 
 const display = {
   location: true,
+  locationIcon: false, // Hide/Show location icon in the header
   time: true,
   themeSwitcher: true,
 };
