@@ -6,7 +6,9 @@ import {
   Heading,
   Icon,
   IconButton,
+  Row,
   SmartImage,
+  SmartLink,
   Tag,
   Text,
 } from "@/once-ui/components";
@@ -116,7 +118,7 @@ export default function About() {
             marginBottom="32"
           >
             {about.calendar.display && (
-              <Link href={about.calendar.link} download={about.calendar.file}>
+              <SmartLink className="resumeDownloadButton" href={about.calendar.link} download={about.calendar.file}>
                 <Flex
                   fitWidth
                   border="brand-alpha-medium"
@@ -135,7 +137,7 @@ export default function About() {
                   <Flex paddingRight="8">{about.calendar.title}</Flex>
                   <IconButton data-border="rounded" variant="secondary" icon="download" />
                 </Flex>
-              </Link>
+              </SmartLink>
             )}
             <Heading className={styles.textAlign} variant="display-strong-xl">
               {person.name}

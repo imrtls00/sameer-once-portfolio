@@ -82,3 +82,9 @@
   height: 100%;
   object-fit: fill;
 }
+
+@media (max-width: 768px) {
+  .resumeDownloadButton {
+    align-self: center;
+  }
+}
