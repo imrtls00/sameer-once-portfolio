@@ -96,14 +96,12 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Sameer has been breathing life into interfaces since 2020. His attention to detail is just
-        awesome. He has a depth of knowledge with passion to solve problems creatively and always
-        eager to look for a uniquely, optimized solution.
+        Award Winning Product Designer with half a decade [5 yrs.] of experience. Sameer has been practicing the art of design since 2020, he has mentored 20+ students with Figma Bootcamps. His Software degree and specialization in Human Computer Interaction helps him understand the pain of developers. His empathy towards tech teams combined with his experience makes him the perfect professional to bridge the gap between Product ― & ― Development.
       </>
     ),
   },
   work: {
-    display: true, // set to false to hide this section
+    display: false, // set to false to hide this section
     title: "Work Experience",
     experiences: [
       {
