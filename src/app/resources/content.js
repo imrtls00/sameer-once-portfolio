@@ -59,7 +59,7 @@ const home = {
         Currently at ― <strong className="ml-4">Blink</strong>
       </>
     ),
-    href: "https://blink.global/vip",
+    href: "https://blink.global/",
   },
   subline: (
     <>
