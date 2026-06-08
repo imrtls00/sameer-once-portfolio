@@ -9,6 +9,7 @@ import { baseURL, effects, style, font, home } from "@/app/resources";
 import { Background, Column, Flex, ThemeProvider, ToastProvider } from "@/once-ui/components";
 import { opacity, SpacingToken } from "@/once-ui/types";
 import { Meta } from "@/once-ui/modules";
+import { Analytics } from "@vercel/analytics/next";
 
 export async function generateMetadata() {
   return Meta.generate({
@@ -123,6 +124,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
           </Column>
         </ToastProvider>
       </ThemeProvider>
+      <Analytics />
     </Flex>
   );
 }
